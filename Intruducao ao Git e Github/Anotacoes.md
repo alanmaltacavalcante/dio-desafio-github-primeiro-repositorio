@@ -1,10 +1,10 @@
 # Introdução ao Git/Github
 
- - O que é Git e sua importância:
+ - ## O que é Git e sua importância:
 
    O Git é um Sistema de Controle de Versão open source, desenvolvido por Linus Torvalds em 2005. Com ele podemos controlar o histórico de alterações de arquivos, utilizado amplamente em projetos de desenvolvimento de software.
 
-- Comandos básicos do terminal Windows e Linux:
+- ## Comandos básicos do terminal Windows e Linux:
 
   |             Ação             |         Windows         |       Linux        |
   | :--------------------------: | :---------------------: | :----------------: |
@@ -18,9 +18,9 @@
 
 
 
-- Instalando o Git
+- ## Instalando o Git
 
-  - Windows
+  - ### Windows
 
     :arrow_down: [Download Git 2.37.2 32bits](https://github.com/git-for-windows/git/releases/download/v2.37.2.windows.2/Git-2.37.2.2-32-bit.exe)
 
@@ -43,7 +43,7 @@
 
   
 
-  - Linux (Debian/Ubuntu)
+  - ### Linux (Debian/Ubuntu)
 
     Para instalar a versão mais recente:
 
@@ -53,7 +53,7 @@
 
 
 
-- Segurança do Git no Versionamento
+- ### Segurança do Git no Versionamento
 
   <p> O git utiliza criptografia SHA-1, que é uma função de dispersão criptográfica, projetada pela Agência de Segurança Nacional dos Estados Unidos. A encriptação via SHA-1 gera um conjunto de caracteres identificadores de 40 dígitos. Caso o arquivo sofra modificações, o conjunto de caracteres gerados será diferente. E se voltar o arquivo ao estado anterior, gerará novamente o conjunto correspondente àquele estado. Assim facilita a identificação daquele arquivo e traz segurança.</p>
 
@@ -61,7 +61,9 @@
 
 > `$ sudo openssl sha1 texto.txt`
 
-- Chave SSH
+
+
+- ### Chave SSH
 
   Usando o método de autenticação por chave ssh, o acesso se torna mais seguro. Vejamos como criar as chaves ssh e configurar na máquina e no github.
 
@@ -105,8 +107,46 @@
 
     Após o ssh-add digite o caminho completo de onde está armazenada a sua chave privada. 
 
-    Digite sua senha e pronto, tudo certo.
+    Digite a senha que configurou na criação da chave e pronto, tudo certo.
 
     Agora está finalizada a configuração das chaves SSH.
+
+    
+
+- ## Primeiros Comandos com Git
+
+  - Criando o primeiro repositório
+
+    1. Crie um diretório na sua máquina chamado "workspace" para o exemplo.
+
+    2. Crie dentro de workspace o diretório que será o primeiro repositório.
+
+    3. No terminal, navegue até o diretório criado para iniciar o git no repositório.
+
+    4. No terminal digite o comando:
+
+       > `$ git init`
+
+  - Configurando as credenciais no git
+
+    1. Configurando o e-mail. No terminal, digite os comandos:
+
+       > `$ get config --global user.email "seu_email"`
+       >
+       > `$ get config --global user.name "Seu Nome"`
+
+  - Criando o primeiro arquivo do repositório
+
+    1. Por convenção e boas práticas, é bom que o repositório possua um arquivo README.md.
+    2. Crie seu arquivo e salve no repositório com a extensão md.
+    3. Para saber mais sobre esse tipo de arquivo acesse [Markdown Guide]("https://markdownguide.org/").
+
+  - Realizando o primeiro commit
+
+    1. No terminal, navegue até o repositório e digite os comandos:
+
+       > `$ git add .` ou `$ git add *`
+       >
+       > $ git commit -m "Descrição/identificação do commit que está sendo realizado"
 
   - 
