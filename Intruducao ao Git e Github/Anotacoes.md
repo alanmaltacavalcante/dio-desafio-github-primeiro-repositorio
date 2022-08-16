@@ -149,4 +149,26 @@
        >
        > $ git commit -m "Descrição/identificação do commit que está sendo realizado"
 
-  - 
+  - Adicionando o repositório remoto ao git
+
+    1. No terminal, navegue até o repositório e digite os comandos:
+
+       > `$ git remote add origin https://github.com/user/repositorio`
+
+  - Enviando (empurrando) o repositório local para o repositório remoto
+
+    1. No terminal, navegue até o repositório e digite os comandos:
+
+       > `$ git push origin main`
+
+    2. Informe sua credencial do github e pronto.
+
+  - Verificações no Git
+
+    1. Verificando credenciais configuradas no git
+
+       > `$ git config --list`
+
+    2. Verificando repositórios remotos configurados
+
+       > `$ git remote -v`
