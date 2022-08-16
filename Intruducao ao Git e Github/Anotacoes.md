@@ -71,7 +71,7 @@
 
   - Criando as chaves:
 
-    > `ssh-keygen -t ed25519 -c 'e-mail - de preferência o mesmo utilizado no github'`
+    > `ssh-keygen -t ed25519 -C 'e-mail - de preferência o mesmo utilizado no github'`
 
     Ao pressionar enter, o terminal irá retornar uma mensagem pedindo para indicar o local onde serão salvos os arquivos, caso queira salvar num local diferente do padrão. [Pressione enter para prosseguir]
 
