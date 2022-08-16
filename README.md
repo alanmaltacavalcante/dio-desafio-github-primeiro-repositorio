@@ -1,2 +1,2 @@
-# dio-desafio-github-primeiro-repositorio
-Desafio de Projeto sobre Git/Github da Dio.me 
+# Meu Primeiro Repositório
+Desafio de Projeto sobre Git/Github da Dio.me (BootCamp Linux Experience)
